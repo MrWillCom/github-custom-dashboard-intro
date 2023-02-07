@@ -1,6 +1,6 @@
 {
   "name": "github-custom-dashboard-intro",
-  "displayName": "Github custom dashboard intro",
+  "displayName": "Github Custom Dashboard Intro",
   "version": "0.0.1",
   "description": "Change the intro on your GitHub dashboard.",
   "author": "Mr. Will",
@@ -10,22 +10,23 @@
     "package": "plasmo package"
   },
   "dependencies": {
+    "@plasmohq/storage": "^1.0.4",
     "plasmo": "0.64.5",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
   "devDependencies": {
+    "@plasmohq/prettier-plugin-sort-imports": "3.6.1",
     "@types/chrome": "0.0.210",
     "@types/node": "18.11.18",
     "@types/react": "18.0.27",
     "@types/react-dom": "18.0.10",
     "prettier": "2.8.3",
-    "typescript": "4.9.4",
-    "@plasmohq/prettier-plugin-sort-imports": "3.6.1"
+    "typescript": "4.9.4"
   },
   "manifest": {
     "host_permissions": [
-      "https://*/*"
+      "https://github.com/*"
     ]
   }
 }

@@ -2,6 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@plasmohq/prettier-plugin-sort-imports': 3.6.1
+  '@plasmohq/storage': ^1.0.4
   '@types/chrome': 0.0.210
   '@types/node': 18.11.18
   '@types/react': 18.0.27
@@ -13,6 +14,7 @@ specifiers:
   typescript: 4.9.4
 
 dependencies:
+  '@plasmohq/storage': 1.0.4_react@18.2.0
   plasmo: 0.64.5_biqbaboplfbrettd7655fr4n2y
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
@@ -1889,6 +1891,19 @@ packages:
       - supports-color
     dev: true
 
+  /@plasmohq/storage/1.0.4_react@18.2.0:
+    resolution: {integrity: sha512-K9OOhrSD4eI9/p0BXeL28C4F+2WlltyzrJe803c+pSAeE0e6TGUHTcftsF9gI5STOyWYHRCJSsGpmiEOTQ7YOw==}
+    peerDependencies:
+      react: ^16.8.6 || ^17 || ^18
+    peerDependenciesMeta:
+      react:
+        optional: true
+    dependencies:
+      '@types/webextension-polyfill': 0.10.0
+      react: 18.2.0
+      webextension-polyfill: 0.10.0
+    dev: false
+
   /@pnpm/network.ca-file/1.0.2:
     resolution: {integrity: sha512-YcPQ8a0jwYU9bTdJDpXjMi7Brhkr1mXsXrUJvjqM2mQDgkRiz8jFaQGOdaLxgjtUfQgZhKy/O3cG/YwmgKaxLA==}
     engines: {node: '>=12.22.0'}
@@ -2122,6 +2137,10 @@ packages:
   /@types/scheduler/0.16.2:
     resolution: {integrity: sha512-hppQEBDmlwhFAXKJX2KnWLYu5yMfi91yazPb2l+lbJiwW+wdo1gNeRA+3RgNSO39WYX2euey41KEwnqesU2Jew==}
     dev: true
+
+  /@types/webextension-polyfill/0.10.0:
+    resolution: {integrity: sha512-If4EcaHzYTqcbNMp/FdReVdRmLL/Te42ivnJII551bYjhX19bWem5m14FERCqdJA732OloGuxCRvLBvcMGsn4A==}
+    dev: false
 
   /@vue/compiler-core/3.2.45:
     resolution: {integrity: sha512-rcMj7H+PYe5wBV3iYeUgbCglC+pbpN8hBLTJvRiK2eKQiWqu+fG9F+8sW99JdL4LQi7Re178UOxn09puSXvn4A==}
@@ -5064,6 +5083,10 @@ packages:
 
   /weak-lru-cache/1.2.2:
     resolution: {integrity: sha512-DEAoo25RfSYMuTGc9vPJzZcZullwIqRDSI9LOy+fkCJPi6hykCnfKaXTuPBDuXAUcqHXyOgFtHNp/kB2FjYHbw==}
+    dev: false
+
+  /webextension-polyfill/0.10.0:
+    resolution: {integrity: sha512-c5s35LgVa5tFaHhrZDnr3FpQpjj1BB+RXhLTYUxGqBVN460HkbM8TBtEqdXWbpTKfzwCcjAZVF7zXCYSKtcp9g==}
     dev: false
 
   /webidl-conversions/4.0.2:
