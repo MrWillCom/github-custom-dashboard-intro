@@ -1,33 +1,44 @@
-This is a [Plasmo extension](https://docs.plasmo.com/) project bootstrapped with [`plasmo init`](https://www.npmjs.com/package/plasmo).
+<img src="./assets/icon.png" alt="the icon of the extension" height="160">
 
-## Getting Started
+# GitHub Custom Dashboard Intro
 
-First, run the development server:
+An browser extension which allows you to change the intro on your GitHub dashboard. Just a joke, have fun! 😉
 
-```bash
-pnpm dev
-# or
-npm run dev
-```
+![A preview screenshot of the extension](./screenshots/extension-preview.png)
 
-Open your browser and load the appropriate development build. For example, if you are developing for the chrome browser, using manifest v3, use: `build/chrome-mv3-dev`.
+Get the extension from [releases](https://github.com/MrWillCom/github-custom-dashboard-intro/releases).
 
-You can start editing the popup by modifying `popup.tsx`. It should auto-update as you make changes. To add an options page, simply add a `options.tsx` file to the root of the project, with a react component default exported. Likewise to add a content page, add a `content.ts` file to the root of the project, importing some module and do some logic, then reload the extension on your browser.
+If you want a Safari version of this, you may need to convert it on your own, check out [docs](https://github.com/MrWillCom/github-custom-dashboard-intro/releases).
 
-For further guidance, [visit our Documentation](https://docs.plasmo.com/)
+## Why I Made This
 
-## Making production build
+Recently, Github added some text to the top of the dashboard:
 
-Run the following:
+![The intro text at the top of the dashboard](./screenshots/intro-original.png)
 
-```bash
+Then [@aeilot](https://github.com/aeilot), a friend of mine, sent me a joke:
+
+![The intro text, but edited](./screenshots/intro-joke.png)
+
+This inspired me to make this extension, allowing users to change the intro, and save the state.
+
+## Building
+
+```sh
+pnpm install
 pnpm build
-# or
-npm run build
 ```
 
-This should create a production bundle for your extension, ready to be zipped and published to the stores.
+Or, build for specific target, e.g. `firefox-mv2`:
 
-## Submit to the webstores
+```sh
+pnpm build --target=firefox-mv2
+```
 
-The easiest way to deploy your Plasmo extension is to use the built-in [bpp](https://bpp.browser.market) GitHub action. Prior to using this action however, make sure to build your extension and upload the first version to the store to establish the basic credentials. Then, simply follow [this setup instruction](https://docs.plasmo.com/framework/workflows/submit) and you should be on your way for automated submission!
+## Development
+
+```sh
+pnpm dev
+```
+
+Then add the extension in `build/chrome-mv3-dev` to your Chrome browser.
