@@ -1,7 +1,7 @@
 {
   "name": "github-custom-dashboard-intro",
   "displayName": "Github Custom Dashboard Intro",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Change the intro on your GitHub dashboard.",
   "author": "Mr. Will",
   "scripts": {
