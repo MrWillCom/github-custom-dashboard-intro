@@ -8,7 +8,7 @@ An browser extension which allows you to change the intro on your GitHub dashboa
 
 Get the extension from [releases](https://github.com/MrWillCom/github-custom-dashboard-intro/releases).
 
-If you want a Safari version of this, you may need to convert it on your own, check out [docs](https://github.com/MrWillCom/github-custom-dashboard-intro/releases).
+If you want a Safari version of this, you may need to convert it on your own, check out [docs](https://docs.plasmo.com/framework/workflows/faq#what-are-the-officially-supported-browser-targets).
 
 ## Why I Made This
 
